@@ -1,0 +1,46 @@
+[
+  {
+    "cve_id": "CVE-2021-3493",
+    "product": "Linux Kernel OverlayFS",
+    "affected_versions": ["<5.11.0", "5.4.0-70", "4.15.0-140"],
+    "min_version": "4.0.0",
+    "max_version": "5.11.0",
+    "severity": "HIGH",
+    "description": "OverlayFS subsystem in Linux kernel fails to properly validate user namespace permissions during upperdir setting.",
+    "reference": "https://nvd.nist.gov/vuln/detail/CVE-2021-3493",
+    "mitigation": "Update Linux kernel to 5.11+ or patched distribution release."
+  },
+  {
+    "cve_id": "CVE-2022-0847",
+    "product": "Linux Kernel (Dirty Pipe)",
+    "affected_versions": [">=5.8", "<5.16.11", "<5.15.25", "<5.10.102"],
+    "min_version": "5.8.0",
+    "max_version": "5.16.10",
+    "severity": "CRITICAL",
+    "description": "Flaw in uninitialized page flags handling in pipe buffer structure allows overwriting read-only file data.",
+    "reference": "https://dirtypipe.cm4all.com/",
+    "mitigation": "Update kernel to 5.16.11, 5.15.25, or 5.10.102+."
+  },
+  {
+    "cve_id": "CVE-2021-4034",
+    "product": "Polkit pkexec (PwnKit)",
+    "affected_versions": ["all"],
+    "min_version": "0.0.0",
+    "max_version": "99.0.0",
+    "severity": "HIGH",
+    "description": "Out-of-bounds argument processing flaw in Polkit pkexec component.",
+    "reference": "https://www.qualys.com/2022/01/25/cve-2021-4034/pwnkit.txt",
+    "mitigation": "Update polkit package or remove SUID bit from pkexec (chmod 0755 /usr/bin/pkexec)."
+  },
+  {
+    "cve_id": "CVE-2023-32233",
+    "product": "Linux Kernel Netfilter",
+    "affected_versions": [">=5.1", "<6.3.1"],
+    "min_version": "5.1.0",
+    "max_version": "6.3.0",
+    "severity": "HIGH",
+    "description": "Use-after-free vulnerability in Linux kernel Netfilter nf_tables subsystem.",
+    "reference": "https://nvd.nist.gov/vuln/detail/CVE-2023-32233",
+    "mitigation": "Upgrade Linux kernel to 6.3.1+ or disable unprivileged user namespaces."
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "allowlist": [
+    "/usr/bin/sudo",
+    "/usr/bin/su",
+    "/usr/bin/passwd",
+    "/usr/bin/newgrp",
+    "/usr/bin/chsh",
+    "/usr/bin/chfn",
+    "/usr/bin/gpasswd",
+    "/usr/bin/umount",
+    "/usr/bin/mount",
+    "/usr/bin/pkexec",
+    "/usr/lib/dbus-1.0/dbus-daemon-launch-helper",
+    "/usr/lib/openssh/ssh-keysign"
+  ],
+  "gtfobins": {
+    "find": {
+      "risk_level": "HIGH",
+      "reason": "Allows running arbitrary commands via -exec flag",
+      "reference": "https://gtfobins.github.io/gtfobins/find/"
+    },
+    "vim": {
+      "risk_level": "HIGH",
+      "reason": "Allows shell escapes via :!/bin/sh or script options",
+      "reference": "https://gtfobins.github.io/gtfobins/vim/"
+    },
+    "bash": {
+      "risk_level": "CRITICAL",
+      "reason": "Preserves elevated privileges when invoked with -p flag",
+      "reference": "https://gtfobins.github.io/gtfobins/bash/"
+    },
+    "cp": {
+      "risk_level": "HIGH",
+      "reason": "Allows overwriting sensitive system files such as /etc/passwd or /etc/sudoers",
+      "reference": "https://gtfobins.github.io/gtfobins/cp/"
+    },
+    "env": {
+      "risk_level": "HIGH",
+      "reason": "Allows launching subshells directly",
+      "reference": "https://gtfobins.github.io/gtfobins/env/"
+    },
+    "nmap": {
+      "risk_level": "HIGH",
+      "reason": "Legacy interactive mode or script engine allows execution",
+      "reference": "https://gtfobins.github.io/gtfobins/nmap/"
+    },
+    "python": {
+      "risk_level": "HIGH",
+      "reason": "Allows arbitrary code execution via import os; os.system()",
+      "reference": "https://gtfobins.github.io/gtfobins/python/"
+    },
+    "python3": {
+      "risk_level": "HIGH",
+      "reason": "Allows arbitrary code execution via import os; os.system()",
+      "reference": "https://gtfobins.github.io/gtfobins/python3/"
+    },
+    "pkexec": {
+      "risk_level": "MEDIUM",
+      "reason": "Polkit execution binary; monitor for PKEY/PwnKit CVEs",
+      "reference": "https://gtfobins.github.io/gtfobins/pkexec/"
+    }
+  }
+}
