@@ -19,6 +19,20 @@ reports.
 
 ---
 
+## 🚀 Project Links
+
+| Resource | Link |
+|---|---|
+| 🌐 **Live Project Website** | **[LPE-AutoScan Website](https://hackforgex.github.io/LPE-AutoScan/)** |
+| 💻 **GitHub Repository** | [HackForgeX/LPE-AutoScan](https://github.com/HackForgeX/LPE-AutoScan) |
+| 📚 **Architecture Documentation** | [Architecture](docs/architecture.md) |
+| 🧪 **Testing Methodology** | [Methodology](docs/methodology.md) |
+| 🔬 **Practical Test Lab** | [Test Lab](docs/test-lab.md) |
+
+> **Live Demo:** Visit the project website for a concise overview of the toolkit, architecture, safety policy, features, and documentation.
+
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
