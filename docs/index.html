@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPE-AutoScan | Linux Privilege Escalation Assessment</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #0b1220; color: #e5e7eb; line-height: 1.6; }
+        header { background: #111827; padding: 60px 20px; text-align: center; }
+        h1 { font-size: 42px; margin-bottom: 10px; }
+        header p { font-size: 20px; color: #9ca3af; }
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        .card { background: #111827; padding: 25px; margin: 20px 0; border-radius: 12px; }
+        h2 { color: #60a5fa; }
+        ul { padding-left: 25px; }
+        .button { display: inline-block; padding: 12px 20px; margin: 10px 5px; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; }
+        .button:hover { background: #1d4ed8; }
+        a:not(.button) { color: #93c5fd; }
+        footer { text-align: center; padding: 30px; background: #111827; color: #9ca3af; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>🛡️ LPE-AutoScan</h1>
+    <p>Linux Privilege Escalation Detection &amp; Assessment Toolkit</p>
+    <a class="button" href="https://github.com/HackForgeX/LPE-AutoScan">View GitHub Repository</a>
+</header>
+<div class="container">
+    <div class="card">
+        <h2>About the Project</h2>
+        <p>LPE-AutoScan is a defensive, detection-only Linux security assessment framework written in Python 3.</p>
+        <p>It automatically enumerates local security configurations, identifies potential privilege-escalation risk factors, correlates findings with security references, and generates structured security reports.</p>
+    </div>
+    <div class="card">
+        <h2>Key Features</h2>
+        <ul>
+            <li>SUID/SGID binary analysis</li><li>Sudo configuration analysis</li><li>File permission analysis</li>
+            <li>Cron job analysis</li><li>Systemd service analysis</li><li>Linux capabilities analysis</li>
+            <li>User and group analysis</li><li>SSH security checks</li><li>Docker/container detection</li>
+            <li>Kernel/CVE correlation</li><li>GTFOBins reference mapping</li><li>Severity and confidence scoring</li>
+            <li>Terminal reports</li><li>JSON reports</li><li>HTML reports</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>Architecture</h2>
+        <p>The toolkit uses a modular scanner architecture. Individual security modules inspect different Linux privilege-escalation attack surfaces and send their findings to the assessment engine.</p>
+        <p>The project includes documentation covering architecture, methodology, and controlled test-lab procedures.</p>
+    </div>
+    <div class="card">
+        <h2>Safety &amp; Non-Exploitation Policy</h2>
+        <p>LPE-AutoScan is designed as a detection-only security assessment toolkit.</p>
+        <ul>
+            <li>No exploit payload execution</li><li>No shellcode execution</li><li>No kernel exploit execution</li>
+            <li>No system configuration modification</li><li>No privilege escalation attempts</li><li>Read-only security inspection</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>Technology</h2>
+        <ul><li>Python 3</li><li>Linux</li><li>Pytest</li><li>JSON</li><li>HTML Reporting</li><li>Git &amp; GitHub</li></ul>
+    </div>
+    <div class="card">
+        <h2>Project Documentation</h2>
+        <ul>
+            <li><a href="architecture.md">System Architecture</a></li>
+            <li><a href="methodology.md">Detection Methodology</a></li>
+            <li><a href="test-lab.md">Controlled Test Lab</a></li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>Project Repository</h2>
+        <p>Source code, tests and complete project documentation:</p>
+        <a class="button" href="https://github.com/HackForgeX/LPE-AutoScan">Open GitHub Repository</a>
+    </div>
+</div>
+<footer>
+    <p>LPE-AutoScan — Linux Privilege Escalation Detection &amp; Assessment Toolkit</p>
+    <p>Developed for cybersecurity education, defensive research and authorized security assessment.</p>
+</footer>
+</body>
+</html>
